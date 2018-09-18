@@ -1,6 +1,5 @@
 package lab1A;
 
-
 public class SimpleList {
 
     private class Unit {
