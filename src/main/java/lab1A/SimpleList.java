@@ -11,11 +11,13 @@ public class SimpleList {
         }
     }
 
-    private Unit header; // Объявление рефренса на начало листа
+    private Unit header;// Объявление рефренса на начало листа
+    private Unit eol;
     private int listIter; // Состояние итератора
 
     public SimpleList() {
-        header = new Unit(0); // Создание начала листа
+        header = new Unit(0);// Создание начала листа
+        eol = header;
         listIter = 0; // Итератор устанавливается на 0
     }
 
@@ -30,20 +32,26 @@ public class SimpleList {
     }
 
     public boolean addUnit(int d) { // Добавление в конец списка
-        Unit eol = new Unit(d); // Создание последнего элемента списка
         Unit current = header; // Переход в начало
 
-        while (current.next != null) { // Поиск конца списка
-            current = current.next;
+        if (header.next == null) {
+            header.data = d;
+        } else {
+            eol = new Unit(d); // Создание последнего элемента списка
+
+            while (current.next != null) { // Поиск конца списка
+                current = current.next;
+            }
+            current.next = eol;
         }
-        current.next = eol;
+
         //System.out.println(d+" добавлен в конец");
         listIter++;
         return true;
     }
 
     public boolean addUnit(int d, int index) { // Добавление в данный индекс
-        Unit eol = new Unit(d);
+        eol = new Unit(d);
         Unit current = header;
         int i;
 
