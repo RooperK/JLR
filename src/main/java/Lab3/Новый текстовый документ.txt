@@ -1,0 +1,79 @@
+35
+ 35   (int)
+ -246
+ -246   (int)
+ 5671L
+ 5671   (long)
+ 4*3+5
+ 17   (int)
+ 4+3*5
+ 19   (int)
+ 25-3/5-6+20/3
+ 25   (int)
+ 5%6
+ 5   (int)
+ 7%6
+ 1   (int)
+ 7%5
+ 2   (int)
+ 1==1
+ true   (boolean)
+ 1<5
+ true   (boolean)
+ 2<=5
+ true   (boolean)
+ 2>6
+ false   (boolean)
+ 3/2>1
+ false   (boolean)
+ 2!=9
+ true   (boolean)
+ 3.1415
+ 3.1415   (double)
+ 2.71823F
+ 2.71823   (float)
+ 0.314E+1
+ 3.14   (double)
+ 25-3.5-6+21.3
+ 36.8   (double)
+ 5/6.0
+ 0.8333333333333334   (double)
+ 5.0/6
+ 0.8333333333333334   (double)
+ 3.7f/5.3f
+ 0.6981132   (float)
+ 1==1.0
+ true   (boolean)
+ 1.0<1.5
+ true   (boolean)
+ 2.3<=2.3f
+ false   (boolean)
+ 1.5==1.5f
+ true   (boolean)
+ double x
+ Error: ';' expected
+ double x:
+ Error: ';' expected
+ double x;
+ ѕримечание: переменные панели кода автоматически инициализируютс€
+  тем же способом, что и пол€ объекта.
+ float a = 3.5;
+ Error: possible loss of precision
+  required: float
+  found:    double
+ float d = 2.5;
+ Error: possible loss of precision
+  required: float
+  found:    double
+ x = 3.5;
+ float a = 3.5f;
+ double d = 2.5f;
+ d = d + 3.75;
+ x = a + 7.5f;
+ final float K = 5.4f;
+ K = 5.45;
+ Error: cannot assign a value to final variable K
+ final double PI = 3.1415926;
+ 2 * PI * 10
+ 62.831852   (double)
+ 
