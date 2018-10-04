@@ -1,0 +1,12 @@
+public class Lab4
+{
+    public static void main(String[]arg){
+        int y = 3;
+        double a, x = -3.06, k = (double)((y + 11)/2);
+        a = (double)(Math.exp(-Math.tan(Math.PI * k) - Math.log(Math.abs(x) ) )  / (k * x + Math.pow(10,5)));
+        System.out.println("Результат вычислений:" + a);
+    }
+}
+
+Lab4.main({ });
+Результат вычислений:3.268674006181277E-6
