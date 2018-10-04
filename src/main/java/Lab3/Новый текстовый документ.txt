@@ -18,11 +18,11 @@ a3
 0.523428   (double)
 
 System.out.printf("a1 = %e; b1 = %e; c1 = %e \n",a2,b1,c1);
-Вывод терминала:
+Г‚Г»ГўГ®Г¤ ГІГҐГ°Г¬ГЁГ­Г Г«Г :
 a1 = -5,234280e+05; b1 = 2,230000e+00; c1 = 2,523000e-01 
 
 System.out.printf("a2 = %e = %14.6f; a3 = %e = %14.6f\n",a2,a2,a3,a3);
-Вывод терминал:
+Г‚Г»ГўГ®Г¤ ГІГҐГ°Г¬ГЁГ­Г Г«:
 a2 = -5,234280e+05 = -523428,000000; a3 = 5,234280e-01 =       0,523428
 
 final double M = 0.25;
@@ -119,3 +119,15 @@ q
 double s = 0.5 + 4.0 / 8.0;
 s
 1.0   (double)
+
+System.out.println(Integer.toBinaryString(Float.floatToIntBits(0.9375f)));
+111111011100000000000000000000
+
+System.out.println(Integer.toBinaryString(Float.floatToIntBits(-0.9375f)));
+10111111011100000000000000000000
+
+System.out.println(Long.toBinaryString(Double.doubleToLongBits(0.9375)));
+11111111101110000000000000000000000000000000000000000000000000
+
+System.out.println(Long.toBinaryString(Double.doubleToLongBits(-0.9375)));
+1011111111101110000000000000000000000000000000000000000000000000
